@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TutorialsNinja _ Sprint 2" parallel="false">
+
+    <!-- Test 1: Select Categories -->
+    <test name="Category Selection Test" verbose="2" preserve-order="true">
+        <classes>
+            <class name="testCases.TC06_SelectCategories">
+                <methods>
+                    <include name="testHoverAndOpenCategory_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test 2: Add to Shopping Cart -->
+    <test name="Add to Shopping Cart Test" verbose="2" preserve-order="true">
+        <classes>
+            <class name="testCases.TC07_AddToShoppingCart">
+                <methods>
+                    <include name="testAddToShoppingCart_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

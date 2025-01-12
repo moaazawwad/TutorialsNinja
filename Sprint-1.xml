@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TutorialsNinja _ Sprint 1" parallel="tests" thread-count="3">
+
+    <!-- Test 1: User Registration -->
+    <test name="User Registration Test">
+        <parameter name="browsername" value=""/>
+
+        <classes>
+            <class name="testCases.TC01_Register">
+                <methods>
+                    <include name="registerWithDynamicData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="User Registration Tesqwet">
+        <parameter name="browsername" value="firefox-headless"/>
+
+        <classes>
+            <class name="testCases.TC01_Register">
+                <methods>
+                    <include name="registerWithDynamicData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--    <test name="User Registration Testasd">-->
+<!--        <parameter name="browsername" value="firefox"/>-->
+
+<!--        <classes>-->
+<!--        <class name="testCases.TC01_Register">-->
+<!--            <methods>-->
+<!--                <include name="registerWithDynamicData_P"/>-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--    </classes>-->
+<!--</test>-->
+    <!-- Test 2: User Login -->
+<!--    <test name="User Login Test">-->
+<!--        <parameter name="browsername" value=""/>-->
+
+<!--        <classes>-->
+<!--            <class name="testCases.TC02_Login">-->
+<!--                <methods>-->
+<!--                    <include name="loginWithValidDynamicData_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <!-- Test 3: Reset Password -->
+<!--    <test name="Reset Password Test">-->
+<!--        <parameter name="browsername" value=""/>-->
+
+<!--        <classes>-->
+<!--            <class name="testCases.TC03_ResetPassword">-->
+<!--                <methods>-->
+<!--                    <include name="verifyForgetPasswordWithValidEmail_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <!-- Test 4: Product Search -->
+<!--    <test name="Product Search Test">-->
+<!--        <classes>-->
+<!--            <class name="testCases.TC04_Search">-->
+<!--                <methods>-->
+<!--                    <include name="testSearchForProduct_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    &lt;!&ndash; Test 5: Change Currency &ndash;&gt;-->
+<!--    <test name="Change Currency Test">-->
+<!--        <classes>-->
+<!--            <class name="testCases.TC05_ChangeCurrencies">-->
+<!--                <methods>-->
+<!--                    <include name="testCurrencyChange_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
