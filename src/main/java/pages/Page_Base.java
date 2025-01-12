@@ -2,12 +2,10 @@ package pages;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-
 import java.io.IOException;
 
 public class Page_Base {
 
-    // TODO: clear all browser data after each test
     public static void quitBrowser(WebDriver driver) {
         // clear browser localStorage , sessionStorage and delete All Cookies
         ((JavascriptExecutor) driver).executeScript("window.localStorage.clear();");
@@ -28,5 +26,4 @@ public class Page_Base {
             e.printStackTrace();
         }
     }
-
 }

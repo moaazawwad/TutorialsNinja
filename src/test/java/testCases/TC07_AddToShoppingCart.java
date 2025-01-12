@@ -23,10 +23,7 @@ public class TC07_AddToShoppingCart extends testBase {
         loginPage.backToHomePage();
 
         homePage.clickOnAddToCart();
-        Thread.sleep(2000);
         homePage.clickOnItems();
-        Thread.sleep(1500);
-
         homePage.clickOnRemove();
 
         String expectedMessage = "Success: You have added MacBook to your shopping cart!";

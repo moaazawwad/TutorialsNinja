@@ -18,21 +18,22 @@ public class P02_LoginPage {
 
     @FindBy( id = "input-password")
     WebElement password;
+
     @FindBy( xpath = "//input[@value=\"Login\"]")
     WebElement loginBTN;
+
     @FindBy( linkText = "Qafox.com")
     WebElement homePageButtom;
-
 
     public void login(String email, String password) {
         this.email.sendKeys(email);
         this.password.sendKeys(password);
         loginBTN.click();
     }
+
     public void backToHomePage() {
         homePageButtom.click();
     }
-
 
     public String loginSuccessMassege() {
         return driver.findElement(By.xpath("(//h2)[1]")).getText();

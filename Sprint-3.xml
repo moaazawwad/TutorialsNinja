@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TutorialsNinja _ Sprint 1" parallel="false">
+<suite name="TutorialsNinja _ Sprint 1">
 
-
-
-    <!-- Test 2: Add to Compare List -->
-    <test name="Add to are List Test" verbose="2" preserve-order="true">
+    <test name="Add different products to compare list">
         <classes>
             <class name="testCases.TC09_AddToCompareList">
                 <methods>
@@ -14,7 +11,8 @@
             </class>
         </classes>
     </test>
-    <test name="Add to Compare List Test" verbose="2" preserve-order="true">
+
+    <test name="Create successful order">
         <classes>
             <class name="testCases.TC10_CreateSuccessfulOrder">
                 <methods>

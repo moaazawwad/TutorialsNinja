@@ -22,7 +22,6 @@ public class TC02_Login extends testBase {
         loginPage = new P02_LoginPage(getDriver());
         homePage = new P01_HomePage(getDriver());
 
-        // Navigate to Login Page
         homePage.openLoginPage();
 
         // Login with dynamic credentials

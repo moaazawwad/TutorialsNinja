@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TutorialsNinja _ Sprint 2" parallel="false">
+    <parameter name="browsername" value=""/>
 
     <!-- Test 1: Select Categories -->
-    <test name="Category Selection Test" verbose="2" preserve-order="true">
+    <test name="Category Selection Test">
         <classes>
             <class name="testCases.TC06_SelectCategories">
                 <methods>
@@ -14,7 +15,7 @@
     </test>
 
     <!-- Test 2: Add to Shopping Cart -->
-    <test name="Add to Shopping Cart Test" verbose="2" preserve-order="true">
+    <test name="add different products to Shopping cart">
         <classes>
             <class name="testCases.TC07_AddToShoppingCart">
                 <methods>
@@ -24,4 +25,14 @@
         </classes>
     </test>
 
+    <!-- Test 3: Add to Shopping Cart -->
+    <test name="add different products to Wishlist">
+        <classes>
+            <class name="testCases.TC08_AddToWishlist">
+                <methods>
+                    <include name="addToWishlist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>

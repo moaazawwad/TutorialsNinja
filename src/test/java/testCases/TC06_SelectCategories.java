@@ -1,12 +1,10 @@
 package testCases;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import pages.P01_HomePage;
 import pages.P02_LoginPage;
 
 import static drivers.DriverHolder.getDriver;
-//import pages.P06_SelectCategoriesPage;
 
 public class TC06_SelectCategories extends testBase {
     P01_HomePage homePage;
@@ -30,5 +28,4 @@ public class TC06_SelectCategories extends testBase {
             assert false : "Unexpected behavior occurred.";
         }
     }
-
 }

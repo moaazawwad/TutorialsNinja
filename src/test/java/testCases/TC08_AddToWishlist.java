@@ -13,7 +13,7 @@ public class TC08_AddToWishlist extends testBase {
 
     @Test(priority = 1, description = "Test adding a product to the wish list and validating the success message")
 
-    public void testAddToWishlist() {
+    public void addToWishlist() {
         SoftAssert softAssert = new SoftAssert();
 
         homePage = new P01_HomePage(getDriver());

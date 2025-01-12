@@ -1,10 +1,6 @@
 package testCases;
 
 import drivers.DriverFactory;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
@@ -17,11 +13,6 @@ import static drivers.DriverHolder.setDriver;
 import static pages.Page_Base.quitBrowser;
 
 public class testBase {
-
-    // define static webdriver
-    // before test [preconditoin for test case]
-    // after test [postcondition for testcase]
-
 
     @Parameters("browsername")
     @BeforeTest
@@ -38,5 +29,4 @@ public class testBase {
     public void tearDown(){
         quitBrowser(getDriver());
     }
-
 }

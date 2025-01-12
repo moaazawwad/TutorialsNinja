@@ -16,11 +16,9 @@ public class TC05_ChangeCurrencies extends testBase {
     public void testCurrencyChange_P() {
         homePage = new P01_HomePage(getDriver());
 
-        // Change currency randomly and retrieve the detected currency symbol
         String selectedCurrency = homePage.changeCurrencyRandomly();
         String detectedCurrencySymbol = homePage.getCurrencySymbol();
 
-        // Verify the detected currency matches the selected currency
         if (selectedCurrency.equals("USD")) {
             Assert.assertEquals(detectedCurrencySymbol, "$", "Currency mismatch: Expected Dollar.");
         } else if (selectedCurrency.equals("EUR")) {

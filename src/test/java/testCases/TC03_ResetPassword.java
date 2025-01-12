@@ -23,7 +23,6 @@ public class TC03_ResetPassword extends testBase {
 
         // Perform password reset
         resetPassPage.forgetPassword(email);
-        Thread.sleep(2000); // Consider replacing with WebDriverWait for better handling
 
         // Validate success message
         String actualMessage = resetPassPage.getSuccessMessageText();

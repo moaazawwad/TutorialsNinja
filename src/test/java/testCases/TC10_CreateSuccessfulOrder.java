@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.P01_HomePage;
 import pages.P02_LoginPage;
-import pages.P07_ProdcutDetails;
+import pages.P05_ProdcutDetails;
 
 import static drivers.DriverHolder.getDriver;
 
@@ -12,7 +12,7 @@ public class TC10_CreateSuccessfulOrder extends testBase {
 
     P01_HomePage homePage;
     P02_LoginPage loginPage;
-    P07_ProdcutDetails productDetails;
+    P05_ProdcutDetails productDetails;
 
     @Test(priority = 1, description = "Test creating a successful order and validating the success message")
     public void testCreateSuccessfulOrder() {
@@ -31,7 +31,7 @@ public class TC10_CreateSuccessfulOrder extends testBase {
         homePage.searchForIMac("hp");
         homePage.clickOnAddToCart();
 
-        productDetails = new P07_ProdcutDetails(getDriver());
+        productDetails = new P05_ProdcutDetails(getDriver());
         productDetails.clickOnAddToCartButton();
         productDetails.clickOnCheckoutButton();
         productDetails.clickOnContinueButtonStepTwo();
