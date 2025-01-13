@@ -5,7 +5,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import java.util.concurrent.TimeUnit;
 
 import static drivers.DriverHolder.getDriver;
@@ -19,9 +18,7 @@ public class testBase {
     public void setupDriver(@Optional String browsername){
 
         setDriver(DriverFactory.getNewInstance(browsername));
-
         getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
         getDriver().get("https://tutorialsninja.com/demo");
     }
 

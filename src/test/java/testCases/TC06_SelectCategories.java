@@ -16,7 +16,7 @@ public class TC06_SelectCategories extends testBase {
         homePage.openLoginPage();
 
         loginPage = new P02_LoginPage(getDriver());
-        loginPage.login("asdasdasd@mailinator.com", "asdasdasd");
+        loginPage.login("validemail@test.comm", "abcd123");
 
         String result = homePage.hoverAndOpenRandomSubcategory();
 

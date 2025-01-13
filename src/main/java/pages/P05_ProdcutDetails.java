@@ -45,6 +45,7 @@ public class P05_ProdcutDetails {
     }
 
     public void clickOnCheckoutButton() {
+
         checkoutButton.click();
     }
 

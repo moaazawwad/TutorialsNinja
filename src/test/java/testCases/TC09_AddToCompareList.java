@@ -19,7 +19,7 @@ public class TC09_AddToCompareList extends testBase {
         homePage.openLoginPage();
 
         loginPage = new P02_LoginPage(getDriver());
-        loginPage.login("asdasdasd@mailinator.com", "asdasdasd");
+        loginPage.login("validemail@test.comm", "abcd123");
         loginPage.backToHomePage();
 
         homePage.clickAddToCompare();

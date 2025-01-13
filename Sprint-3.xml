@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TutorialsNinja _ Sprint 1">
+    <parameter name="browsername" value=""/>
 
     <test name="Add different products to compare list">
         <classes>

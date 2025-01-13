@@ -19,11 +19,15 @@ public class TC07_AddToShoppingCart extends testBase {
         homePage.openLoginPage();
 
         loginPage = new P02_LoginPage(getDriver());
-        loginPage.login("asdasdasd@mailinator.com", "asdasdasd");
+        loginPage.login("validemail@test.comm", "abcd123");
         loginPage.backToHomePage();
 
         homePage.clickOnAddToCart();
+        Thread.sleep(1500);
+
         homePage.clickOnItems();
+        Thread.sleep(1500);
+
         homePage.clickOnRemove();
 
         String expectedMessage = "Success: You have added MacBook to your shopping cart!";

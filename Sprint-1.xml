@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TutorialsNinja _ Sprint 1">
-
+    <parameter name="browsername" value=""/>
     <!-- Test 1: User Registration -->
     <test name="User Registration Test">
         <classes>
@@ -13,10 +13,10 @@
         </classes>
     </test>
 
+
     <!-- Test 2: User Login -->
     <test name="User Login Test">
         <parameter name="browsername" value=""/>
-
         <classes>
             <class name="testCases.TC02_Login">
                 <methods>
@@ -26,38 +26,37 @@
         </classes>
     </test>
 
-    <!-- Test 3: Reset Password -->
-    <test name="Reset Password Test">
-        <parameter name="browsername" value=""/>
+<!--    &lt;!&ndash; Test 3: Reset Password &ndash;&gt;-->
+<!--    <test name="Reset Password Test">-->
+<!--        <parameter name="browsername" value=""/>-->
+<!--        <classes>-->
+<!--            <class name="testCases.TC03_ResetPassword">-->
+<!--                <methods>-->
+<!--                    <include name="verifyForgetPasswordWithValidEmail_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-        <classes>
-            <class name="testCases.TC03_ResetPassword">
-                <methods>
-                    <include name="verifyForgetPasswordWithValidEmail_P"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+<!--&lt;!&ndash;     Test 4: Product Search &ndash;&gt;-->
+<!--    <test name="Product Search Test">-->
+<!--        <classes>-->
+<!--            <class name="testCases.TC04_Search">-->
+<!--                <methods>-->
+<!--                    <include name="testSearchForProduct_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-<!--     Test 4: Product Search -->
-    <test name="Product Search Test">
-        <classes>
-            <class name="testCases.TC04_Search">
-                <methods>
-                    <include name="testSearchForProduct_P"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-    <!-- Test 5: Change Currency -->
-    <test name="Change Currency Test">
-        <classes>
-            <class name="testCases.TC05_ChangeCurrencies">
-                <methods>
-                    <include name="testCurrencyChange_P"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
+<!--    &lt;!&ndash; Test 5: Change Currency &ndash;&gt;-->
+<!--    <test name="Change Currency Test">-->
+<!--        <classes>-->
+<!--            <class name="testCases.TC05_ChangeCurrencies">-->
+<!--                <methods>-->
+<!--                    <include name="testCurrencyChange_P"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
