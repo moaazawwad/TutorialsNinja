@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TutorialsNinja _ parallel execution" parallel="tests" thread-count="2">
+    <test name="User Registration Test --  firefox">
+        <parameter name="browsername" value="firefox"/>
+
+        <classes>
+            <class name="testCases.TC01_Register">
+                <methods>
+                    <include name="registerWithDynamicData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="User Registration Test  --  chrome">
+        <parameter name="browsername" value=""/>
+
+        <classes>
+            <class name="testCases.TC01_Register">
+                <methods>
+                    <include name="registerWithDynamicData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
